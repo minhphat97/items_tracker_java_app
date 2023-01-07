@@ -1,0 +1,34 @@
+Author name: Minh Phat Tran
+Author ID: 301 297 286 
+CURL COMMANDS
+
+The following curl commands is used for Windows 10
+1. Check the web server is working via a statement "System is up!"
+
+	curl -i -X GET localhost:8080/ping
+
+2. Add a new item to serverd
+
+	curl -H "Content-Type: application/json" -X POST -d "{\"name\": \"Chicken\", \"notes\": \"Fried\", \"price\": 10.0, \"expiry\": \"2021-12-12\", \"type\": \"Food\", \"dayExpiry\": 0.0 ,\"volumeOrWeight\": 0}" localhost:8080/addItem
+	
+3. Remove an item from server
+
+	curl -i -X POST localhost:8080/removeItem/0
+
+4. List all expired items in server
+
+	curl -i -X GET localhost:8080/listAll
+
+5. List all non-expired items in server
+
+	curl -i -X GET localhost:8080/listNonExpired
+
+6. List all expiring items in 7 days
+
+	curl -i -X GET localhost:8080/listExpiringIn7Days
+
+7. Close the server and save all items to a JSON file
+
+	curl -i -X GET localhost:8080/exit
+
+	

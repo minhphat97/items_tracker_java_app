@@ -1,0 +1,21 @@
+Author name: Minh Phat Tran
+Author ID: 301 297 286 
+USER'S MANUAL
+
+The Consumables Tracker application GUI will show you general interface which includes buttons
+All, Expired, Not Expired, Expiring in 7 Days, Remove and Add Item.
+
+First of all, you have run web server, then you run GUI client 
+
+1. Click All button to list available items that has been stored
+2. Click Expired button to list expired items that has been stored
+3. Click Not Expired button to list not expired items that has been stored
+4. Click Expiring in 7 Days button to list items that will be expired in 7 days
+5. Click Add Item to add one more item which could be drink or food item. If you enter empty name,
+negative or empty price, weight or value, there will show a warning dialog. 
+6. Click Remove to display a dialog that require you to enter the number item that you want to 
+remove. If you enter a number item that is not in the list, there will show a warning dialog.
+However, there is a bit special here. Because sometimes when you want to remove an item by specific ID, 
+the communication between server and client is not good. Therefore, server cannot remove that item. But you can
+try again to remove that item.
+   
